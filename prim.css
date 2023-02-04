@@ -4,6 +4,22 @@ h1 {
     text-align: center;
 }
 
+h2 {
+  color:red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+p {
+  color:red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
 button {
     background-color: #4CAF50; /* Green */
     border: line-style;
@@ -16,33 +32,42 @@ button {
     transition: 0.2s all;
 }
 
-/* button:active {
-  /*transform: scale(0.5);
-}*/
+.img1 {
+    border-style: groove;
+    border-radius: 50%;
+    border-width: 10;
+    border-color: purple;
+    margin: auto;
+    display: block;
+  }
+
+.img2 {
+  border-style: solid;
+  border-color: black;
+  margin: auto;
+  width: 347px;
+  height: 195px;
+  display: block;
+}
+
+form label {
+  color: red;
+}
 
 button:hover {
   transform: scale(0.9);
 }
 
-/* CSS
-.button-34 {
-  background: #5E5DF0;
-  border-radius: 999px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
-} */
+body {
+  /*credit to steve johnson @ https://www.pexels.com/photo/abstract-art-background-12951262/ */
+  background-image: url('pexels-steve-johnson.jpg');
+}
+
+.footer {
+  margin-top: 10em;
+  padding-bottom: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: inline;
+}
