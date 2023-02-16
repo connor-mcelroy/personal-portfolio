@@ -83,11 +83,11 @@ body {
   background-image: url('pexels-steve-johnson.jpg');
 }
 
-.footer {
-  margin-top: 10em;
-  margin-bottom: -100px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: inline;
+.block {
+  position: relative;
+  width: 50%;
+  border-color: black;
+  border-width: 2em;
+  border-style:ridge;
+  justify-content: center;
 }
