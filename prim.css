@@ -74,7 +74,16 @@ button {
 .img2 {
   border-style: solid;
   border-color: black;
-  width: 800px;
+  width: 900px;
+  align-self: center;
+  display: block;
+}
+
+.img3 {
+  border-style: solid;
+  border-color: black;
+  width: 347px;
+  height: 192px;
   align-self: center;
   display: block;
 }
