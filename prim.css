@@ -28,6 +28,16 @@ p {
   margin-right: 10em;
 }
 
+.p2 {
+  color:rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
 button {
     background-color: #4CAF50; /* Green */
     border: line-style;
@@ -64,9 +74,8 @@ button {
 .img2 {
   border-style: solid;
   border-color: black;
-  margin: auto;
-  width: 347px;
-  height: 195px;
+  width: 800px;
+  align-self: center;
   display: block;
 }
 
@@ -90,4 +99,16 @@ body {
   border-width: 2em;
   border-style:ridge;
   justify-content: center;
+  background-size: auto;
+  background-color: antiquewhite;
+}
+
+.btn.btn-info.btn-lg {
+  background-color: black;
+  margin: auto;
+  margin-bottom: 10%;
+}
+
+.image-fluid {
+  width: 100%;
 }
