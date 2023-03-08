@@ -68,14 +68,6 @@ button {
     display: block;
   }
 
-.img2 {
-  border-style: solid;
-  border-color: black;
-  width: 900px;
-  align-self: center;
-  display: block;
-}
-
 .img3 {
   border-style: solid;
   border-color: black;
@@ -113,8 +105,16 @@ body {
   background-color: black;
   margin: auto;
   margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.image-fluid {
+.img-fluid {
   width: 100%;
+}
+
+.border {
+  background-color: bisque;
+  border-width: 50em;
+  width: 70%
 }
