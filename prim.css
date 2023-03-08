@@ -32,10 +32,7 @@ p {
   color:rgb(0, 0, 0);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
-  margin-top: 10em;
-  margin-bottom: 10em;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin: 10%;
 }
 
 button {
@@ -63,9 +60,9 @@ button {
 }
 
 .img1 {
-    border-style: groove;
+    border-style: solid;
     border-radius: 50%;
-    border-width: 10;
+    border-width: 100;
     border-color: purple;
     margin: auto;
     display: block;
