@@ -103,14 +103,16 @@ body {
 
 .btn.btn-info.btn-lg {
   background-color: black;
-  margin: auto;
   margin-bottom: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 30%;
+  display: inline-block;
 }
 
 .img-fluid {
   width: 100%;
+
 }
 
 .border {
