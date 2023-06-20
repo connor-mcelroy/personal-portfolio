@@ -120,3 +120,18 @@ body {
   border-width: 50em;
   width: 70%
 }
+
+.mapouter {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  display: inline-block;
+  margin: 0 auto;
+}
