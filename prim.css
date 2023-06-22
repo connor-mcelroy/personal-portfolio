@@ -101,6 +101,13 @@ body {
   background-color: antiquewhite;
 }
 
+.block_pic {
+  position: relative;
+  width: 50%;
+  justify-content: center;
+  padding: 20px;
+}
+
 .btn.btn-info.btn-lg {
   background-color: black;
   margin-bottom: 10%;
