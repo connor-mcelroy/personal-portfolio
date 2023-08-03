@@ -10,6 +10,11 @@ h2 {
   text-align: center;
 }
 
+.h2 {
+  color: red;
+  text-decoration: none;
+}
+
 h3 {
   color:red;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -88,17 +93,6 @@ body {
   background-color: rgb(31, 25, 25);
 }
 
-.block {
-  position: relative;
-  width: 50%;
-  border-color: black;
-  border-width: 2em;
-  border-style:ridge;
-  justify-content: center;
-  background-size: auto;
-  background-color: antiquewhite;
-}
-
 .btn.btn-info.btn-lg {
   background-color: black;
   margin-bottom: 10%;
@@ -123,7 +117,7 @@ body {
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 500px;
+  height: 100%;
   display: inline-block;
   margin: 0 auto;
 }
@@ -143,15 +137,28 @@ body {
   }
 }
 
-/* Center the navbar on mobile devices */
+.index {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Adjustments on mobile devices */
 @media (max-width: 876px) {
   .bar {
     display: flex;
     justify-content: center;
     margin: 0 auto;
   }
+  .gmap_canvas {
+    width: 100%;
+  }
+  .responsive-link {
+    font-size: 90%;
+  }
 }
 
+/* Standard adjustments on full screens */
 @media (min-width: 877px) {
   .bar {
     max-width: auto;
@@ -161,10 +168,4 @@ body {
   .img1 {
     max-width: 520px;
   }
-}
-
-.index {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
 }
