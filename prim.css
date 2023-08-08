@@ -143,6 +143,29 @@ body {
   margin: 0 auto;
 }
 
+.custom-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  width: 200px;
+  margin: 10px auto;
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  text-decoration: none;
+}
+
+.custom-button:active {
+  background-color: #4CAF50; /* Keep the background color on click */
+  text-decoration: none;
+}
+
 /* Adjustments on mobile devices */
 @media (max-width: 876px) {
   .bar {
