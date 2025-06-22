@@ -143,6 +143,19 @@ body {
   margin: 0 auto;
 }
 
+.custom-button-header {
+  background-color: #054d07;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  width: 250px;
+  margin: 10px auto;
+  text-decoration: none;
+}
+
 .custom-button {
   background-color: #4CAF50;
   color: white;
