@@ -1,39 +1,82 @@
 <!DOCTYPE html>
 
 <html>
+    <!--head navigation-->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio</title>
+        <title>Home</title>
+
+        <!--styling-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="prim.css">
     </head>
+
+    <!--body-->
     <body>
         <!--header-->
         <div>
-            <h1>Connor McElroy</h1>
+            <header class = "h1" id="start">Connor McElroy</header>
         </div>
 
         <!--nav-->
         <div class="bar">
-            <button onclick = "window.location.href = 'index.html';">Home</button>
-            <button onclick = "window.location.href = 'about.html';">About</button>
-            <button class = "button_active"; onclick = "window.location.href = 'portfolio.html';">Portfolio</button>
-            <button onclick = "window.location.href = 'contact.html';">Contact</button>
+            <button class = "button_active"; onclick = "window.location.href = 'index.html';">Home</button>
+            <button onclick = "document.getElementById('about').scrollIntoView({behavior: 'smooth'});">About</button>
+            <button onclick = "document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'});">Portfolio</button>
+            <button onclick = "document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact</button>
+        </div><br><br>
+
+        <!--tagline-->
+        <div class="border mb-3 border-danger border-5">
+            <header class = "tagline">I want to make great games that forge great memories.</header>
+        </div>
+
+        <!--profile-->
+        <div class = "index">
+            <br><img class = "img1"; src= "imgs/cm.jpg" alt="Connor McElroy">
         </div>
 
         <!--title-->
-        <h2>Portfolio</h2>
+        <header class = "h2" id="about">About</header>
+
+        <!--about-->
+        <div>
+            <p class="p2">
+                My name is Connor McElroy, and I hold a lifelong adoration for the video game. I grew up during the glory days of sixth and seventh generation gaming, and those
+                experiences have gone a long way towards shaping me into who I am today. Those memories will forever be irreplaceable, and I intend to give back to a world that 
+                gave so much to me and my friends as a child.<br><br>
+                I am a holder of a bachelor's degree in Computer Science from the University of Idaho. I have studied specifically towards becoming a game developer, and have 
+                completed several independent video game projects of various genres in Engines such as Unreal Engine and Game Maker. These games can be seen on my portfolio page. 
+                I have knowledge of programming in C, C++, C#, HTML/CSS, PHP, and Python. When I have some time and I'm not putting it towards coding, I can be found practicing 
+                longsword fencing, playing airsoft, skiing, rock climbing, and writing short novels.
+            </p>
+
+            <!--images-->
+            <div style="display: flex;" class="bar">
+
+                <!--photo 1-->
+                <div>
+                    <br><img src="imgs/IMG-5126.jpg" class="img-fluid img1" alt="Connor McElroy Skiing">
+                </div>
+
+                <!--photo 2-->
+                <div>
+                    <br><img src="imgs/IMG-20221112-192910795.JPG" class="img-fluid img1" alt="Connor McElroy Fencing">
+                </div>
+            </div>
+
+        </div>
+
+        <!--title-->
+        <header class = "h2" id="portfolio">Portfolio</header>
 
         <!--personal project section-->
         <div class="border p-20 mb-3 border-danger border-5">
             <div class="text-center">
                 
                 <!-- Collapsible button -->
-                <button class="custom-button-header" data-toggle="collapse" data-target="#portfolioCollapsePersonal">
+                <button class="custom-button-header" data-bs-toggle="collapse" data-bs-target="#portfolioCollapsePersonal">
                     Personal
                 </button>
 
@@ -43,7 +86,7 @@
                     <div class="text-center">
                     
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#personalPortfolioCollapse1">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#personalPortfolioCollapse1">
                             Lord Privateer
                         </button>
                 
@@ -64,7 +107,7 @@
                             <!-- first row -->
                             <div class="text-center">
                                 <!-- inline modal button 1 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal1">
                                     <img src="../imgs/ss1.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -80,7 +123,7 @@
 
                                 <!-- inline modal button 2 -->
                                 
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal4">
                                     <img src="../imgs/ss2.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -98,7 +141,7 @@
                             <!-- second row -->
                             <div class="text-center">
                                 <!-- inline modal button 3 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal2">
                                     <img src="../imgs/ss5.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -113,7 +156,7 @@
                                 </div>
 
                                 <!-- inline modal button 4 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal3">
                                     <img src="../imgs/ss4.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -134,7 +177,7 @@
                     <div class="text-center">
                     
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#personalPortfolioCollapse6">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#personalPortfolioCollapse6">
                             Soothe
                         </button>
                     
@@ -165,7 +208,7 @@
                     <div class="text-center">
                     
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#personalPortfolioCollapse7">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#personalPortfolioCollapse7">
                             "Project Kaiju"
                         </button>
                     
@@ -192,7 +235,7 @@
                     <div class="text-center">
                         
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#personalPortfolioCollapse2">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#personalPortfolioCollapse2">
                             Cinematic Swordfight Simulator
                         </button>
                     
@@ -210,7 +253,7 @@
                             <!-- first row -->
                             <div class="text-center">
                                 <!-- inline modal button 1 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal5">
                                     <img src="../imgs/css1.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -225,7 +268,7 @@
                                 </div>
 
                                 <!-- inline modal button 2 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal6">
                                     <img src="../imgs/css2.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -246,7 +289,7 @@
                     <div class="text-center">
 
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#personalPortfolioCollapse3">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#personalPortfolioCollapse3">
                             Incoming!!
                         </button>
                     
@@ -265,7 +308,7 @@
                             <!-- first row -->
                             <div class="text-center">
                                 <!-- inline modal button 1 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal7">
                                     <img src="../imgs/inc1.png" class="img-fluid" alt="Responsive image"></button>
                                 <!-- modal -->
                                 <div id="myModal7" class="modal fade" role="dialog">
@@ -279,7 +322,7 @@
                                 </div>
 
                                 <!-- inline modal button 2 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal8">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal8">
                                     <img src="../imgs/inc2.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -300,7 +343,7 @@
                     <div class="text-center">
                         
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#personalPortfolioCollapse4">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#personalPortfolioCollapse4">
                             Minesweeper
                         </button>
                     
@@ -320,7 +363,7 @@
                             <!-- first row -->
                             <div class="text-center">
                                 <!-- inline modal button 3 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal9">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal9">
                                     <img src="../imgs/ms1.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -335,7 +378,7 @@
                                 </div>
 
                                 <!-- inline modal button 4 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal10">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal10">
                                     <img src="../imgs/ms2.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -356,7 +399,7 @@
                     <div class="text-center">
                         
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#personalPortfolioCollapse5">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#personalPortfolioCollapse5">
                             MyHome
                         </button>
                     
@@ -376,7 +419,7 @@
                             <!-- first row -->
                             <div class="text-center">
                                 <!-- inline modal button 3 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal11">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal11">
                                     <img src="../imgs/ol1.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -391,7 +434,7 @@
                                 </div>
 
                                 <!-- inline modal button 4 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal12">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal12">
                                     <img src="../imgs/ol2.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -409,7 +452,7 @@
                             <!-- second row -->
                             <div class="text-center">
                                 <!-- inline modal button 3 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal13">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal13">
                                     <img src="../imgs/ol3.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -424,7 +467,7 @@
                                 </div>
 
                                 <!-- inline modal button 4 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal14">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal14">
                                     <img src="../imgs/ol4.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -442,7 +485,7 @@
                             <!-- third row -->
                             <div class="text-center">
                                 <!-- inline modal button 3 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal15">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal15">
                                     <img src="../imgs/ol6.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -457,7 +500,7 @@
                                 </div>
 
                                 <!-- inline modal button 4 -->
-                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal16">
+                                <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal16">
                                     <img src="../imgs/ol8.png" class="img-fluid" alt="Responsive image"></button>
 
                                 <!-- modal -->
@@ -483,7 +526,7 @@
             <div class="text-center">
                 
                 <!-- Collapsible button -->
-                <button class="custom-button-header" data-toggle="collapse" data-target="#portfolioCollapseProfessional">
+                <button class="custom-button-header" data-bs-toggle="collapse" data-bs-target="#portfolioCollapseProfessional">
                     Professional
                 </button>
 
@@ -501,7 +544,7 @@
                     <div class="text-center">
                     
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#professionalPortfolioCollapse1">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#professionalPortfolioCollapse1">
                             Multiplayer Arena Party Game Project
                         </button>
                 
@@ -521,7 +564,7 @@
                     <div class="text-center">
                     
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#professionalPortfolioCollapse6">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#professionalPortfolioCollapse6">
                             Environmental Horror Project
                         </button>
                     
@@ -541,7 +584,7 @@
                     <div class="text-center">
                         
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#professionalPortfolioCollapse2">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#professionalPortfolioCollapse2">
                             Kart Racing Project
                         </button>
                     
@@ -561,7 +604,7 @@
                     <div class="text-center">
 
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#professionalPortfolioCollapse3">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#professionalPortfolioCollapse3">
                             Open World Survival Project
                         </button>
                     
@@ -581,7 +624,7 @@
                     <div class="text-center">
                         
                         <!-- Collapsible button -->
-                        <button class="custom-button" data-toggle="collapse" data-target="#professionalPortfolioCollapse4">
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#professionalPortfolioCollapse4">
                             Advanced Character Material/PCG Project
                         </button>
                     
@@ -600,7 +643,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="links-area d-lg-none">
+            <!-- later additions... -->
+        </div>
+
+        <!--title-->
+        <header class = "h2" id="contact">Contact</header>
+
+        <!--contact-->
+        <div class="text-center">
+            <p class="p2">
+                If you would like to contact me, please send me an email at the below address. I will get back to you as soon as I am able!
+                I am located in Coeur d'Alene, ID and can travel for work as well as work remote.
+            </p>
+
+            <!--email-->
+            <a class="h3" href="mailto: connormce123@gmail.com">connormce123@gmail.com</a>
         
-        <script src="" async defer></script>
+            <!--google map-->
+            <br><br><div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Coeur d'Alene,%20ID&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div><br>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
