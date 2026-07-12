@@ -9,6 +9,7 @@
 
         <!--styling-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="prim.css">
     </head>
 
@@ -20,12 +21,15 @@
         </div>
 
         <!--nav-->
-        <div class="bar">
-            <button class = "button_active"; onclick = "window.location.href = 'index.html';">Home</button>
-            <button onclick = "document.getElementById('about').scrollIntoView({behavior: 'smooth'});">About</button>
-            <button onclick = "document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'});">Portfolio</button>
-            <button onclick = "document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact</button>
-        </div><br><br>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div>
+                <button onclick = "document.getElementById('start').scrollIntoView({behavior: 'smooth'});">Home</button>
+                <button onclick = "document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">About</button>
+                <button onclick = "document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'});">Portfolio</button>
+                <button onclick = "document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact</button>
+            </div>
+        </nav>
+        <br><br>
 
         <!--tagline-->
         <div class="border mb-3 border-danger border-5">
@@ -76,11 +80,46 @@
             <div class="text-center">
                 
                 <!-- Collapsible button -->
-                <button class="custom-button-header" data-bs-toggle="collapse" data-bs-target="#portfolioCollapsePersonal">
+                <button class="custom-button-header" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioCollapsePersonal">
                     Personal
                 </button>
 
-                <div id="portfolioCollapsePersonal" class="collapse">
+                <div class="collapse mt-3" id="portfolioCollapsePersonal">
+
+                    <!--soothe-->
+                    <div class="text-center">
+                    
+                        <!-- Collapsible button -->
+                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#personalPortfolioCollapse6">
+                            Soothe
+                        </button>
+                    
+                        <!-- Collapsible content -->
+                        <div id="personalPortfolioCollapse6" class="collapse text-center">
+
+                            <p class="p2">
+                                <a class="responsive-link" href="https://store.steampowered.com/app/4675330/Soothe/" target="_blank">
+                                    https://store.steampowered.com/app/4675330/Soothe/</a><br><br>
+                                Soothe is a small Unreal Engine 5 puzzle game I have published to Steam. You awaken at the bottom of a rusted pit, another forgotten machine 
+                                amongst a pile of those who came before. On your right, an extendable grappling claw, and on your left, a melted screen. You are given 
+                                only one goal - reach the light above.
+                                <br><br>This project is a primarily a showcase of the cool tricks you can pull off with material arithmetic. Such examples include real-time
+                                rusting of metal robotic arms, false walls that are exposed by using mesh distance fields from those arms, and object materials
+                                that can only be seen with certain other specific materials directly behind them!
+                            </p>
+
+                            <!-- first row -->
+                            <div class="text-center">
+
+                                <img src="../imgs/rustMat-ezgif.com-video-to-gif-converter.gif" class="img-fluid thumb mx-2" alt="Responsive image" style="max-width:600px; height:auto;">
+
+                                <img src="../imgs/distFieldMat-ezgif.com-video-to-gif-converter.gif" class="img-fluid thumb mx-2" alt="Responsive image" style="max-width:600px; height:auto;">
+
+                                <img src="../imgs/perspectiveMat-ezgif.com-video-to-gif-converter.gif" class="img-fluid thumb mx-2" alt="Responsive image" style="max-width:600px; height:auto;">
+
+                            </div>
+                        </div>
+                    </div>
 
                     <!--lord privateer-->
                     <div class="text-center">
@@ -99,9 +138,9 @@
                                 Lord Privateer is my first 3D Unreal Engine project. As the undead captain of a mysterious vessel 
                                 sent from the afterlife into a somber world ruled by an ultra-powerful ocean tyrant, you are tasked with laying waste to evil seafaring forces, vanquishing 
                                 powerful champion vessels, demolishing naval forts, and displacing The Patriarch from his position of power.
-                                <br><br>I made Lord Privateer in Unreal Engine 5, and launched on Steam, June 1, 2023 after almost exactly two years of work.
-                                Lord Privateer is a single-player, open-world, ship-combat exploration experience. The player can engage in open-world ship battles, boss boat fights,
-                                naval fort assaults, and manual landmark navigation to progress through the story.
+                                <br><br>Lord Privateer is a single-player, open-world, ship-combat exploration experience. The player can engage in open-world ship battles, 
+                                boss boat fights, naval fort assaults, and manual landmark navigation to progress through the story. This project hits many of the core tenets 
+                                of full spectrum game development and helped start me on my journey in a big way.
                             </p>
 
                             <!-- first row -->
@@ -173,37 +212,6 @@
                         </div>
                     </div>
 
-                    <!--soothe-->
-                    <div class="text-center">
-                    
-                        <!-- Collapsible button -->
-                        <button class="custom-button" data-bs-toggle="collapse" data-bs-target="#personalPortfolioCollapse6">
-                            Soothe
-                        </button>
-                    
-                        <!-- Collapsible content -->
-                        <div id="personalPortfolioCollapse6" class="collapse text-center">
-
-                            <p class="p2">
-                                Soothe is a small Unreal Engine 5 material showcase puzzle game I currently have in development.
-                                <br><br>This project is meant to be a collection of cool examples of what you can do with material arithmetic. Such examples include real-time
-                                rusting of metal robotic arms, false walls that are exposed by using mesh distance fields from those arms, and object materials
-                                that can only be seen with certain other specific materials directly behind them!
-                            </p>
-
-                            <!-- first row -->
-                            <div class="text-center">
-
-                                <img src="../imgs/rustMat-ezgif.com-video-to-gif-converter.gif" class="img-fluid thumb mx-2" alt="Responsive image" style="max-width:600px; height:auto;">
-
-                                <img src="../imgs/distFieldMat-ezgif.com-video-to-gif-converter.gif" class="img-fluid thumb mx-2" alt="Responsive image" style="max-width:600px; height:auto;">
-
-                                <img src="../imgs/perspectiveMat-ezgif.com-video-to-gif-converter.gif" class="img-fluid thumb mx-2" alt="Responsive image" style="max-width:600px; height:auto;">
-
-                            </div>
-                        </div>
-                    </div>
-
                     <!--kaiju-->
                     <div class="text-center">
                     
@@ -216,9 +224,10 @@
                         <div id="personalPortfolioCollapse7" class="collapse text-center">
 
                             <p class="p2">
-                                This is a clip taken from the latest build of a multiplayer arena project I have in the works. 
-                                This prototype features replicated multiplayer movement from grapples that allow the players to swing from buildings at great speeds and heights. 
-                                The animations being used were provided courtesy of my good friend Thomas Snyder, who is experienced with modeling and animating in Blender:
+                                "Project Kaiju" is a build of a multiplayer arena project I have in the works. This prototype features replicated multiplayer movement 
+                                from grapples that can be fired from the arm and allow the players to swing from buildings at great speeds and heights. I intend to continue
+                                working with this system to create a satisfying lateral and vertical movement system akin to that in the legendary <i>Attack on Titan.</i>
+                                The animations being used were provided courtesy of my good friend Thomas Snyder, who is experienced in modeling and animating with Blender:
                                 <br><br>https://www.upwork.com/freelancers/~012c438bfcedc1b6b8?mp_source=share
                             </p>
 
@@ -245,9 +254,11 @@
                             <p class="p2">
                                 <a href="https://bingitybongity.itch.io/cinematic-swordfight-simulator" target="_blank">
                                     https://bingitybongity.itch.io/cinematic-swordfight-simulator</a><br><br>
-                                Cinematic Swordfight Simulator is a minimalist art style 2D swordfighting party game. Grab a few controllers and duel to the death against your friends, blade to blade!
+                                Cinematic Swordfight Simulator is a minimalist art style 2D swordfighting party game, and the first I ever made. Grab a few controllers 
+                                and duel to the death against your friends, blade to blade!
                                 <br><br>I made Cinematic Swordfight Simulator in the Game Maker 2 engine, and made it available online at itch.io February 2021.
-                                CSS, as I like to call it, is a two-player fighting party game played on controllers that puts two players in opposition armed with swords and scarves.
+                                CSS, as I like to call it, is a two-player fighting party game played on controllers that puts two players in opposition armed with swords and scarves. 
+                                It's simple and it's fun, a blueprint that is always good to follow.
                             </p>
 
                             <!-- first row -->
@@ -534,9 +545,9 @@
 
                     <div class="text-center">
                         <p class="p2">
-                            The contract work I did for Drew Labs/Sweet Sprockets in Coeur d'Alene was primarily rapid prototyping. Until these projects are 
-                            published and leave NDA I cannot discuss them specifically, but each section below does detail the general ideas and mechanics I 
-                            successfully implemented for each.
+                            For just shy of two years, I did contract work I did for Drew Labs/Sweet Sprockets in Coeur d'Alene. This work was mostly of a rapid prototyping kind. 
+                            Many of the projects are either unreleased or shelved indefinitely, so I cannot discuss them specifically. That said, each section below does detail 
+                            the systems, ideas, and/or mechanics I successfully implemented for each.
                         </p>
                     </div>
                     
@@ -553,8 +564,8 @@
 
                             <p class="p2">
                                 The most involved project I worked, this game was an arena-style multiplayer experience involving playing as small animals. This project 
-                                focused largely on skills concerning: <br> - Networked and replicated movement and controls utilizing RPC's <br> - Functional pregrame 
-                                lobbies supporting inviting through Steam
+                                focused largely on skills concerning: <br> - Networked and replicated movement and controls utilizing RPC's <br> - Functional pregame 
+                                lobbies supporting inviting through Steam <br> - Persistent progression systems attached to player profiles
                             </p>
 
                         </div>
@@ -574,7 +585,7 @@
                             <p class="p2">
                                 The closest project to being entirely finished, this game put the player within an isolated small-scale enclosed map requiring them 
                                 to track environmental cues to succeed. This project focused largely on skills concerning: <br> - Small-scale enclosed level design <br> - 
-                                Ambience and post-process effects
+                                Ambience and post-process effects <br> - Walking sim-style horror gameplay
                             </p>
 
                         </div>
@@ -594,7 +605,7 @@
                             <p class="p2">
                                 The largest-scope of my work projects, this game was built in the spirit of child-friendly kart racers like Mario Kart. This project focused 
                                 largely on skills concerning: <br> - Inheritance concepts within large blueprints for player and AI vehicles <br> - Racing AI for following tight 
-                                paths at competitive speeds
+                                paths at competitive speeds <br> - Scripted as well as physics-based vehicular interactions for fun and chaos
                             </p>
 
                         </div>
@@ -614,7 +625,7 @@
                             <p class="p2">
                                 The most visually focused of the projects, this game took the form of a more traditional open-world survival played across a remote tropical 
                                 island. This project focused largely on skills concerning: <br> - Advanced landscape materials and landscape layer painting <br> - Large-scale 
-                                outdoor level design and level streaming
+                                outdoor level design and level streaming/optimization <br> - Linear story structure and progression
                             </p>
 
                         </div>
@@ -635,7 +646,7 @@
                                 The smallest of these projects, this game served largely as a series of experiments in creating more elaborate character materials and 
                                 procedural generated levels. This project focused largely on skills concerning: <br> - Dynamic materials for character meshes that can achieve 
                                 visual effects like turning transparent and ghost-like when passing through objects <br> - Creating procedurally-generated levels at runtime using 
-                                PCG volumes and graphs
+                                PCG volumes and graphs <br> - Elaborate and dynamic Niagara particle effects
                             </p>
 
                         </div>
@@ -669,6 +680,5 @@
             </div><br>
         </div>
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
