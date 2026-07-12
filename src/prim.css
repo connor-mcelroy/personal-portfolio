@@ -202,7 +202,7 @@ body {
 /* Standard adjustments on full screens */
 @media (min-width: 877px) {
   .bar {
-    max-width: auto;
+    max-width: none;
     display: flex;
     justify-content: center;
   }
